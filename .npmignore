@@ -5,3 +5,4 @@ config/config.json
 test
 package-lock.json
 .eslintrc.json
+.travis.yml

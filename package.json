@@ -1,6 +1,6 @@
 {
   "name": "husky-check-email",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "bin": {
     "husky-check-email": "index.js"
   },
@@ -11,17 +11,25 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "npm run lint",
-    "lint": "./node_modules/.bin/eslint index.js"
+    "lint": "./node_modules/.bin/eslint index.js lib.js test",
+    "test": "mocha -t 10000 --exit",
+    "check_coverage": "nyc check-coverage --lines 100 --functions 100 --branches 100",
+    "coverage": "nyc npm test",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "prepublishOnly": "npm test && npm run coverage && npm run check_coverage && npm run lint"
   },
   "author": "Jehy http://github.com/jehy",
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "eslint": "^5.10.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^5.2.0",
+    "chai": "^4.2.0",
+    "nyc": "^13.1.0"
   },
   "engines": {
     "node": ">=8"

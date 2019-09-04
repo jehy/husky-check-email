@@ -1,6 +1,6 @@
 {
   "name": "husky-check-email",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "bin": {
     "husky-check-email": "index.js"
   },
@@ -20,16 +20,16 @@
   },
   "author": "Jehy http://github.com/jehy",
   "devDependencies": {
-    "coveralls": "^3.0.2",
-    "eslint": "^5.10.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-loader": "^2.1.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "mocha": "^5.2.0",
+    "coveralls": "^3.0.6",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-loader": "^3.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^6.2.0",
     "chai": "^4.2.0",
-    "nyc": "^13.1.0"
+    "nyc": "^14.1.1"
   },
   "engines": {
     "node": ">=8"

@@ -27,3 +27,7 @@ npm i husky-check-email
   }
 }
 ```
+
+#### See also
+ * [husky-check-name](https://www.npmjs.com/package/husky-check-email)
+ * [husky-add-issue-tracker](https://www.npmjs.com/package/husky-add-issue-tracker)

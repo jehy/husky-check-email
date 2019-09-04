@@ -1,10 +1,17 @@
 {
   "name": "husky-check-email",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "bin": {
     "husky-check-email": "index.js"
   },
   "description": "check email for domain before git commit",
+  "keywords": [
+    "hooks",
+    "git",
+    "husky",
+    "validator",
+    "email"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:jehy/husky-check-email.git"

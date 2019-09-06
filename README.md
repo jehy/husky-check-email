@@ -18,11 +18,23 @@ npm i husky-check-email
 
 #### Usage (package.json)
 
+If you want to validate only one email:
 ```json
 {
   "husky": {
     "hooks": {
       "pre-commit": "husky-check-email @mydomain.com"
+    }
+  }
+}
+```
+
+If you want to validate several email domains:
+```json
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "husky-check-email @mydomain.com,@mail.ru"
     }
   }
 }

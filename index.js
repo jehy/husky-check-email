@@ -18,6 +18,10 @@ if (!needEmail)
 // console.log(`checking if email is ${needEmail}`);
 if (!lib.checkUserEmail(needEmail, userEmail))
 {
+  if (!needEmail) {
+    colors.red('You need to pass domain as argyment to husky-check-email!');
+    process.exit(1);
+  }
   colors.red(`You need to commit with ${needEmail} email`);
   colors.red(`Your email is set to "${userEmail}"`);
   colors.red('You can fix this with following command:');

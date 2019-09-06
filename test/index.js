@@ -10,6 +10,12 @@ describe('checkUserEmail', ()=>{
     const res = lib.checkUserEmail(needEmail, userEmail);
     assert.equal(res, true);
   });
+  it('should fail when neccesary doamin not passed', ()=>{
+    const needEmail = '';
+    const userEmail = 'devil@hell.com';
+    const res = lib.checkUserEmail(needEmail, userEmail);
+    assert.equal(res, false);
+  });
 
 
   it('should not email when it does not exist', ()=>{

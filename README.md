@@ -18,7 +18,7 @@ npm i husky-check-email
 
 #### Usage (package.json)
 
-If you want to validate only one email:
+If you want to validate email against one domain:
 ```json
 {
   "husky": {
@@ -29,7 +29,7 @@ If you want to validate only one email:
 }
 ```
 
-If you want to validate several email domains:
+If you want to validate email against several domains:
 ```json
 {
   "husky": {

@@ -16,7 +16,11 @@ function getUserEmail()
 
 function checkUserEmail(needEmail, userEmail)
 {
-  return userEmail && userEmail.toLowerCase().endsWith(needEmail.toLowerCase()) || false;
+  if (!userEmail) {
+    return false;
+  }
+  const emails = needEmail && needEmail.replace(' ', '').split(',') || [];
+  return emails.some((email) => userEmail.toLowerCase().endsWith(email.toLowerCase()));
 }
 
 module.exports = {

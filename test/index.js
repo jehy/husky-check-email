@@ -20,4 +20,12 @@ describe('checkUserEmail', ()=>{
       assert.equal(res, false);
     });
   });
+
+  it('should find email when it several', () => {
+    const needEmail = '@hell.com,@heaven.co.uk';
+    ['devil@hell.com', 'angel@heaven.co.uk'].forEach((userEmail) => {
+      const res = lib.checkUserEmail(needEmail, userEmail);
+      assert.equal(res, true);
+    });
+  });
 });

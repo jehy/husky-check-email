@@ -9,7 +9,6 @@ const {colors} = lib;
 const needEmail = process.argv[2];
 const userEmail = lib.getUserEmail();
 
-
 if (!needEmail)
 {
   colors.red('No email to check! Please provide email to check in package.json!');

@@ -17,7 +17,6 @@ describe('checkUserEmail', ()=>{
     assert.equal(res, false);
   });
 
-
   it('should not email when it does not exist', ()=>{
     const needEmail = '@hell.com';
     const badEmail = ['devil@mail.ru', '', null, undefined, 'hell.com@mail.ru'];

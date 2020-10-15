@@ -41,5 +41,5 @@ If you want to validate email against several domains:
 ```
 
 #### See also
- * [husky-check-name](https://www.npmjs.com/package/husky-check-email)
+ * [husky-check-name](https://www.npmjs.com/package/husky-check-name)
  * [husky-add-issue-tracker](https://www.npmjs.com/package/husky-add-issue-tracker)

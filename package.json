@@ -28,13 +28,13 @@
   "author": "Jehy http://github.com/jehy",
   "devDependencies": {
     "coveralls": "^3.1.0",
-    "eslint": "^7.5.0",
+    "eslint": "^7.11.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-loader": "^4.0.2",
-    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "mocha": "^8.0.1",
+    "mocha": "^8.1.3",
     "chai": "^4.2.0",
     "nyc": "^15.1.0"
   },

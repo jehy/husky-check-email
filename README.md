@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/husky-check-email.svg)](https://npm.im/husky-check-email)
 [![license](https://img.shields.io/npm/l/husky-check-email.svg)](https://npm.im/husky-check-email)
-[![Build Status](https://travis-ci.org/jehy/husky-check-email.svg?branch=master)](https://travis-ci.org/jehy/husky-check-email)
+![Build](https://github.com/jehy/husky-check-email/workflows/Build/badge.svg)
 [![dependencies Status](https://david-dm.org/jehy/husky-check-email/status.svg)](https://david-dm.org/jehy/husky-check-email)
 [![devDependencies Status](https://david-dm.org/jehy/husky-check-email/dev-status.svg)](https://david-dm.org/jehy/husky-check-email?type=dev)
 [![Coverage Status](https://coveralls.io/repos/github/jehy/husky-check-email/badge.svg?branch=master)](https://coveralls.io/github/jehy/husky-check-email?branch=master)

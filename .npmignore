@@ -6,3 +6,4 @@ test
 package-lock.json
 .eslintrc.json
 .travis.yml
+coverage

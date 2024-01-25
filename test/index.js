@@ -33,4 +33,10 @@ describe('checkUserEmail', ()=>{
       assert.equal(res, true);
     });
   });
+  it('should find email using regex', () => {
+    const needEmail = '@hell.[a-z]+';
+    const userEmail = 'devil@hell.org';
+    const res = lib.checkUserEmail(needEmail, userEmail);
+    assert.equal(res, true);
+  });
 });

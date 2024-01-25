@@ -20,7 +20,8 @@ function checkUserEmail(needEmail, userEmail)
     return false;
   }
   const emails = needEmail && needEmail.replace(' ', '').split(',') || [];
-  return emails.some((email) => userEmail.toLowerCase().endsWith(email.toLowerCase()));
+  return emails.some((email) => userEmail.toLowerCase().endsWith(email.toLowerCase()) ||
+   userEmail.toLowerCase().match(email.toLowerCase()) != null);
 }
 
 module.exports = {

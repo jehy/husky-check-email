@@ -28,6 +28,7 @@
         ]
       }
     ],
+    "import/extensions": "off",
     "prefer-destructuring": "warn",
     "one-var": "off",
     "no-mixed-operators": "off",

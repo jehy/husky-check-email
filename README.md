@@ -40,6 +40,17 @@ If you want to validate email against several domains:
 }
 ```
 
+You can also validate using a regex:
+```json
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "husky-check-email @mydomain.[a-z]+"
+    }
+  }
+}
+```
+
 #### See also
  * [husky-check-name](https://www.npmjs.com/package/husky-check-name)
  * [husky-add-issue-tracker](https://www.npmjs.com/package/husky-add-issue-tracker)
